@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 41 to 52</title>
+
+<style>
+    .hidden {
+        visibility: hidden;
+    }
+</style>
+
+
+</head>
+<body>
+    <script>
+
+
+// *******************************Chapter 41, 42 (while loops, do…while loops)******************************************
+// ********************************(All Questions must be done with both loops)*******************************
+
+
+
+// Question No 1 to 7:-
+
+
+
+
+// 1.
+// while loop
+// var i =0;
+// while (i <= 1) {
+//     i++;
+//   }
+
+
+// do while loop 
+//  var i = 0;
+//  do {
+//  i++;
+//  } while (i <= 1);
+
+
+
+// 2.
+// while loop
+// var animals=["horse", "ox", "cow", "pig", "duck"];
+// var i = 0;
+// while (i <= animals.length) {
+//     if (animals[i] === "pig") {
+// alert("Found it");
+// break;
+// }
+// i++;
+// }
+
+
+
+// do while loop 
+// var animals = ["horse", "ox", "cow", "pig", "duck"];
+// var i = 0;
+// do {
+//     if (animals[i] === "pig") {
+//         alert("Found it");
+//     }
+//     i++;
+// }
+// while (i <= animals.length)
+
+
+
+
+
+// 3.
+// while loop
+// var i =1;
+// while (i <= 10) {
+//     document.write(i + "<br>")
+//     i++;
+//   }
+
+
+// do while loop 
+//  var i = 1;
+//  do {
+//     document.write(i + "<br>")
+
+//  i++;
+//  } while (i <= 10);
+
+
+
+
+
+// 4.
+// while loop
+// var input = +prompt("Enter Number");
+// var i = 0; 
+// while (i < input) {
+
+// }
+
+
+// var i;
+// var num;
+// var n = prompt("Please enter a number");
+// for(i = 0; i < n.length; i++){
+//     num += n[i];
+
+// }
+// alert(num);
+
+
+
+
+
+
+// 5.
+
+// while loop
+
+// var x = +prompt("Enter Number");
+// var i = 0; 
+
+// while (i <= x) {
+   
+//       if (x % 2 === 0) {
+//              alert(x + " is even");   
+//              break
+//      }
+//      else {
+//              alert(x + " is odd");
+//              break
+//      }
+//      i++;
+//  }
+
+
+
+// do while loop
+
+// var x = +prompt("Enter Number");
+// var i = 0; 
+// do {
+//     if (x % 2 === 0) {
+//         alert(x + " is even");   
+//         break
+// }
+// else {
+//         alert(x + " is odd");
+//         break
+// }
+// i++;
+// } while (i <= x)
+
+
+
+
+
+// 6.
+// while loop
+
+// let y = Math.floor(Math.random() * 10 + 1);
+ 
+// let guess = 1;
+
+//     let x = +prompt("Enter Number");
+
+//     if (x == y) {
+//         alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+//             + guess + " GUESS ");
+//     }
+
+//     else if (x > y) {
+//         guess++;
+//         alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+//     }
+//     else {
+//         guess++;
+//         alert("OOPS SORRY!! TRY A GREATER NUMBER")
+//     }
+
+
+
+
+
+// 7.
+// while loop
+// var timer = 60;
+// while (timer > 0) {
+// console.log(timer);
+// timer--;
+// }
+// console.log("Time Out");
+
+
+
+// do while loop
+// var timer = 60;
+// do {
+//     console.log(timer);
+// timer--;
+// }while (timer > 0) 
+
+// console.log("Time Out");
+
+
+
+
+
+
+
+
+
+
+//  ******************************Chapter 46, 48 (Events)******************************************
+
+
+    //  1.
+// <button onclick="alert('Welcome!')">Submit</button> 
+
+
+
+
+//  2.
+
+//  <a id="anas" href="index.html">Home Page</a> <br><br><br>
+// <a href="#" onclick="document.getElementById('anas').style.visibility='hidden'"> Hide Value</a>
+
+
+// 3.
+//  <p onMouseover="this.style.color='green';" onmouseout="this.style.color='black';">Change color</p> 
+</script>
+
+
+
+
+ <!-- 4. -->
+ <!-- <button>Welcome</button>
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<button onclick="scrollToTop()">
+    Click to scroll to top
+</button> -->
+<!-- <script>
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script> -->
+
+
+<!-- 5.  -->
+<!-- <audio id="audio" controls>
+    <source src="maula-ya-salli-wa-sallim.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function sound() {
+        var sound = new Audio('maula-ya-salli-wa-sallim.mp3')
+     sound.play()
+    }
+</script>
+
+  <a href="#" onclick="sound()">run</a> -->
+
+
+
+<!-- 6. -->
+
+<!-- <a href="#" target="_blank" onclick="this.href='http://www.google.com'">click</a> -->
+
+
+
+<!-- 7. -->
+<!-- <button onclick="alert('Hi')">Submit</button> -->
+
+
+
+
+<!-- 8. -->
+<!-- <button onMouseover="this.style.color='green';" onmouseout="this.style.color='black';">Change color</button> -->
+
+
+
+<!-- 9. -->
+<!-- <audio id="audio" controls>
+    <source src="maula-ya-salli-wa-sallim.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function sound() {
+        var sound = new Audio('maula-ya-salli-wa-sallim.mp3')
+     sound.play()
+    }
+</script>
+
+  <button href="#" onclick="sound()">run</button> -->
+
+
+
+
+
+  <!-- 10. -->
+<!-- <p onmouseover="alert('Hello')">Please over mouse here</p> -->
+
+
+<!-- 11. -->
+
+<!-- <button style="padding: 100px; color: blue; background-color: white;" onmouseout="this.style.display='none';">Please over mouse here</button> -->
+
+
+
+<!-- 12. -->
+
+
+
+
+    <!-- ******************************Chapter 49, 50 (Reading and Setting field values)****************************************** -->
+
+
+
+    <!-- 1. -->
+<!-- <form>
+    <input type="text" name="text" id="input">
+<button onclick="addInput()">Submit</button>
+</form>
+
+
+    <script>
+        function addInput() {
+            var input = document.getElementById('input').value;
+            console.log(input)
+        }
+        
+    </script> -->
+
+
+
+
+<!-- 2. -->
+    <!-- <input type="checkbox" name="country" value="pakistan" id="checkbox">
+    <label for="checkbox">pakistan</label><br>
+    <button onclick="addCheckbox()">Submit</button>
+
+<script>
+    function addCheckbox() {
+        var input = document.getElementById('checkbox').value;
+        console.log(input)
+    }
+</script> -->
+
+
+<!-- 3. -->
+
+<!-- <p> Select one from the given options:
+    <select id="select">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+</p>
+
+<button onclick="getOption()"> Check option </button>
+ 
+<script>
+function getOption() {
+    option = document.getElementById('select');
+    answer = option.value;
+    console.log(answer)
+}
+</script> -->
+
+
+
+
+<!-- 4. -->
+<!-- <script>
+    document.getElementById('demo').value = 21;
+</script> -->
+
+
+
+
+<!-- 5. -->
+<!-- <script>
+if (married === false) {
+    document.getElementById("status").value = "available";
+  }
+</script> -->
+
+
+
+
+<!-- 6. -->
+<script>
+    // if(document.getElementById("demo").value = "") {
+    //     document.getElementById("demo").value = "Anas";
+    // }
+</script>
+
+
+
+<!-- 7. -->
+<!-- <form action="#" onsubmit="formValidate()">
+   <label for="input">Name: </label>
+    <input type="text" id="input"><br><br>
+
+    <label for="input">Email: </label>
+    <input type="email" name="email" id="email"><br><br>
+
+    <input type="submit" value="Submit" id="submit">
+</form>
+
+<script>
+
+    function formValidate() {
+var input = document.getElementById('input').value;
+var email = document.getElementById('email').value;
+// var submit = document.getElementById('submit');
+
+if (input === "") {
+    alert("Input Name")
+}
+else if (email === "") {
+    alert("Fill the Field");
+}
+} -->
+
+
+    <!-- ******************************Chapter 51 (Reading and Setting paragraph text)****************************************** -->
+
+
+
+<!-- 1. -->
+<!-- <p id="lorem23">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ducimus?
+    <a href="javascript:void(0);" onClick="expandPara();"><em>Click for more.</em></a>
+    </p>
+<script>
+
+ function expandPara() {
+ var para = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, maiores atque ad doloribus harum nemo ut et odio fuga perspiciatis rerum fugiat dolores laborum? Earum ipsa ab, quasi eaque voluptatum autem corrupti maxime odio.";
+ document.getElementById("lorem23").innerHTML = para;
+ }
+</script>     -->
+
+
+
+
+
+<!-- 3. -->
+
+<!-- <p id ="para">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum omnis, laudantium ullam dolor unde aperiam? Dolore assumenda modi sequi debitis harum atque praesentium?"</p> -->
+
+<!-- <script>
+    // var str = document.getElementById('para').value;
+    function longWord(str) {
+var words = str.split(" ");
+var size = "";
+words.forEach(word => {
+    if(word.length >= size.length) {
+        size = word
+    }
+})
+return size;
+}
+console.log(longWord("My name is anas sohail"))
+
+</script> -->
+
+
+
+<!-- 4. -->
+<!-- <input type="text" id="input">
+<script>
+    if(document.getElementById('input') !== "") {
+        document.getElementById = Text
+    }
+</script> -->
+
+
+
+
+<!-- 5/ -->
+<!-- <input type='text' id='input' />
+    <br>
+    <br>
+    <button onclick="btnRun()">
+        Click to Enter the Value in paragraph
+    </button>
+    <p id="para">
+    </p>
+    <script>
+        var para = document.getElementById("para");
+        var input = document.getElementById("input");
+  
+        function btnRun() {
+            if(input.value !== "" ) {
+            para.innerHTML = "Value = " + "'" + input.value + "'";
+        }
+        else {
+            alert("Please enter in field")
+        }
+        }
+    </script> -->
+
+
+
+
+<!-- 6. -->
+
+<!-- <input type='text' id='input' />
+    <br>
+    <br>
+    <button onclick="btnRun()">
+        Click to Enter the Value in paragraph
+    </button>
+    <p id="para">
+    </p>
+    <script>
+        var para = document.getElementById("para");
+        var input = document.getElementById("input");
+  
+        function btnRun() {
+            if(input.value === "word" ) {
+            para.innerHTML = "Value = " + "'" + input.value + "'";
+        }
+        else {
+            alert("Please Write correct word in field")
+        }
+        }
+    </script> -->
+
+
+
+
+
+    <!-- 7. -->
+
+    <!-- <input type='text' id='input' />
+    <br>
+    <br>
+    <button onclick="btnRun()">
+        Click to Enter the Value in paragraph
+    </button>
+    <p id="para">
+    </p>
+    <script>
+        var para = document.getElementById("para");
+        var input = document.getElementById("input");
+        input.length = 8;
+  
+        function btnRun() {
+            if(input.value > input.length) {
+            para.innerHTML = "Value = " + "'" + input.value + "'";
+            input.value = "";
+        }
+        else {
+            alert("Please Write correct word in field")
+            input.value = "";
+        }
+        }
+    </script> -->
+
+
+
+
+
+
+
+    <!-- *************************8Chapter 52 (Manipulating Images and Text) ***************************8-->
+
+
+
+
+<!-- 1. -->
+<!-- <p id="para" onclick="addBold()">Anas Sohail</p>
+
+<script>
+
+function addBold() {
+    var bold = document.getElementById('para').style.fontWeight = "bold";
+}
+
+</script> -->
+
+
+
+
+
+<!-- 2. -->
+
+<!-- <img width="300px" height="300px" id="img1" src="car1.jpeg" onmouseover="hideImg()" onmouseout="showImg()">
+<br><br><br>
+
+<p onmouseover="hideImg()" id="para" style="font-size: 50px;"></p>
+
+
+ <script>
+
+function hideImg() {
+    var hide = document.getElementById('img1').style.visibility="hidden";
+ var para = document.getElementById('para').innerHTML="Anas Sohail"; 
+}
+
+function showImg() {
+    var hide = document.getElementById('img1').style.visibility="visible";
+    var para = document.getElementById('para').className = "hidden";
+}
+
+</script>  -->
+
+
+
+
+
+<!-- 3. -->
+<!-- <p id="ppp" onmouseover="colorBlack()" onmouseout="colorGrey()" style="font-size: 50px; background-color: grey;"> Anas Sohail</p>
+
+
+<script>
+function colorBlack() {
+var para = document.getElementById('ppp');
+para.style.backgroundColor = "black"
+para.style.color = "White"
+}
+
+function colorGrey() {
+var para = document.getElementById('ppp');
+para.style.backgroundColor = "grey"
+para.style.color = "White"
+}
+
+</script> -->
+
+
+
+
+
+<!-- 4. -->
+ <!-- <p id="ppp" onmouseover="textUnderline()" onmouseout="textNone()" style="font-size: 50px;"> Anas Sohail</p>
+
+
+<script>
+    function textUnderline() {
+        var para = document.getElementById('ppp');
+        para.style.textDecoration= "underline"
+    }
+
+    function textNone() {
+        var para = document.getElementById('ppp');
+        para.style.textDecoration= "none"
+    }
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
